@@ -6,14 +6,17 @@
 <div class="btn-wrapper">
 
 
-<button class="btn-primary">{{primaryButtonText}}</button>
+<button 
+class="btn-primary"
+ (click)="submit()"
+ [disabled]="disablePrimaryBtn">{{primaryBtnText}}</button>
 <div class="dividir">
     <div></div>
 <span>or</span>
 <div></div>
 </div>
 
-<button class="btn-secundary">{{SecundaryButtonText}}</button>
+<button class="btn-secundary"  (click)="navigate()">{{secondaryBtnText}}</button>
 </div>
     </section>
     <section class="main-section">
